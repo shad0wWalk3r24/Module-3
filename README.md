@@ -1,7 +1,7 @@
-# Module-3
+# Week-3
 # Terminal and BASH
 
-# This module we focus learned how to use the beginner commands for creating, removing, copying, moving, and renaming files and directories using the command line interface, aka terminal. 
+# In this module we focus learned how to use the beginner commands for creating, removing, copying, moving, and renaming files and directories using the command line interface, aka terminal. 
 # We learned the basic commands such as:
   move: moving files between directories, and renaming files
   copy: coping files or group of files or directory
