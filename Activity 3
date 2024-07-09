@@ -1,0 +1,78 @@
+Activity File: Oh Henry, What Did You Do?
+
+
+You continue in your role as a security analyst at Candy Corp, investigating the employees potentially selling secret recipes to Sugar Corp.
+
+
+Your manager at Candy Corp has identified two possible insiders who may be working with Sugar Corp: Henry and Ruth.
+
+
+Your manager pulled some files from Henry and Ruth's computers without their knowledge.
+
+
+Some of the files contain gibberish, but some may have useful data.
+
+
+Your manager has asked you to preview the files to see if they have readable text data that can be analyzed later.
+
+
+
+Instructions
+Using only the command line, complete the following tasks from the /03-student/day1/oh_henry/ folder in your Ubuntu virtual machine:
+
+  cd /03-student/day1/oh_henry/
+  /03-student/day1/oh_henry$ ls
+
+There are two folders inside the /03-student/day1/oh_henry/ folder: One for files captured from Henry and one for files captured from Ruth.
+
+  cd /03-student/day1/oh_henry/henry$ ls
+  cd /03-student/day1/oh_henry/henry/files$ ls
+
+Use the preview commands to determine which of the files contain readable text data.
+
+  /03-student/day1/oh_henry/henry/files$
+  less b7.txt
+  more bb.txt
+  head -5 do.txt
+  less sp.txt
+  more wp.txt
+
+  /03-student/day1/oh_henry/ruth/files$ 
+  less hy.txt
+  more l8.txt
+  head -3 ud.txt
+  less sd.txt
+  more ta.txt
+
+Remove the files that contain non-readable text data.
+
+  /03-student/day1/oh_henry/henry/files$ rm b7.txt bb.txt dj.txt
+  /03-student/day1/oh_henry/ruth/files$ rm sd.txt ta.txt
+
+
+Bonus
+The files each have a timestamp at the bottom.
+
+  tail do.txt
+  tail sp.txt
+  tail wp.txt
+
+  tail hy.txt
+  tail l8.txt
+  tail ud.txt
+
+Use the mv command to rename each file by adding the date found on the bottom of the file.
+ 
+  /03-student/day1/oh_henry/henry/files$
+  mv do.txt do.txt_10_13_2019
+  mv sp.txt sp.txt_10_14_2019
+  mv wp.txt wp.txt_10_15_2019
+
+  /03-student/day1/oh_henry/ruth/files$
+  mv hy.txt hy.txt_10_14_2019
+  mv l8.txt l8.txt_10_13_2019
+  mv ud.txt ud.txt_10_15_2019
+
+  
+
+For example, File1 has a date of October 11, 2019. Rename it to file1-10_11_2019.
