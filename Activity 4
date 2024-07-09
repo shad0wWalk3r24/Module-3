@@ -1,0 +1,81 @@
+Activity File: Internal Investigation: Find the Kit cat Burglar
+
+
+You continue in your role as security analyst at Candy Corp, investigating the employees potentially selling secret recipes to Sugar Corp.
+
+
+Your manager at Candy Corp has collected some additional files from Henry and Ruth's computers to help you build your case against them.
+
+
+Your manager wants you to analyze this additional data and prepare a combined evidence file for the local authorities.
+
+
+You must act fast so the secret recipes don't get into the hands of Sugar Corp.
+
+
+
+Instructions
+Go to the following directory to complete the activity: find_kit_cat_burglar.
+
+  cd /03-student/day1/
+  cd find_kit_cat_burglar
+
+  pwd /03-student/day1/find_kit_cat_burglar/
+
+Within this directory are subdirectories for Ruth and Henry.
+
+
+Navigate through these directories and find all the files that can be considered evidence of Henry and Ruth's crimes.
+
+  /03-student/day1/find_kit_cat_burglar/ruth/emails/emailA
+  /03-student/day1/find_kit_cat_burglar/ruth/emails/sd.txt
+  /03-student/day1/find_kit_cat_burglar/henry/emails/email1
+  /03-student/day1/find_kit_cat_burglar/henry/emails/email4
+  /03-student/day1/find_kit_cat_burglar/henry/logs/log1
+  /03-student/day1/find_kit_cat_burglar/henry/logs/log2
+  /03-student/day1/find_kit_cat_burglar/henry/other/top_secret/recipe_for_sugarplum
+  /03-student/day1/find_kit_cat_burglar/henry/other/top_secret/recipe_for_sweetums
+
+Make a new directory called Evidence_for_authorities within the find_kit_cat_burglar directory.
+
+  mkdir Evidence_for_authorities
+
+Copy all the evidence files into the Evidence_for_authorities folder, then concatenate the files into a single file called Candy-evidence.txt. This will be provided as evidence to the local authorities.
+
+  cp /03-student/day1/find_kit_cat_burglar/ruth/emails/emailA   /03-student/day1/find_kit_cat_burglar/Evidence_for_authorities
+  cp /03-student/day1/find_kit_cat_burglar/ruth/files/sd.txt     /03-student/day1/find_kit_cat_burglar/Evidence_for_authorities
+  cp /03-student/day1/find_kit_cat_burglar/henry/emails/email1  /03-student/day1/find_kit_cat_burglar/Evidence_for_authorities
+  cp /03-student/day1/find_kit_cat_burglar/henry/emails/email4   /03-student/day1/find_kit_cat_burglar/Evidence_for_authorities
+  cp /03-student/day1/find_kit_cat_burglar/henry/logs/log1    /03-student/day1/find_kit_cat_burglar/Evidence_for_authorities
+  cp /03-student/day1/find_kit_cat_burglar/henry/logs/log2  /03-student/day1/find_kit_cat_burglar/Evidence_for_authorities
+  cp /03-student/day1/find_kit_cat_burglar/henry/other/top_secret/recipe_for_sugarplum    /03-student/day1/find_kit_cat_burglar/Evidence_for_authorities
+  cp /03-student/day1/find_kit_cat_burglar/henry/other/top_secret/recipe_for_sweetums  /03-student/day1/find_kit_cat_burglar/Evidence_for_authorities
+
+  cat emailA sd.txt email1 email4 log1 log2  recipe_for_sugarplum recipe_for_sweetums > Candy-evidence.txt
+
+Bonus
+Four of Ruth's TXT files are not actually text files but secret pictures.
+
+b7.txt
+bb.txt
+dj.txt
+lp.txt
+
+Find the files and change the file extensions to an image extension.
+
+  find b7.txt
+  find bb.txt
+  find dj.txt
+  find lp.txt
+
+  mv b7.txt b7.jpg
+  mv bb.txt bb.jpg
+  mv dj.txt dj.jpg
+  mv lp.txt lp.jpg
+
+Open each file with an image program and note what's in the picture.
+
+  gimp b7.jpg
+  gimp bb.jpg
+  gimp dj.jpg
+  gimp lp.jpg
